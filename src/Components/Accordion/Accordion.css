@@ -1,0 +1,77 @@
+.Accordion {
+    width: 90%;
+    margin: 8px 0;
+    transition: 2.5s;
+}
+
+.Accordion .Title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFFFFF;
+    font-size: 1.1rem;
+    color: #BC4639;
+    padding: 8px 12px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.Accordion.Active .Title {
+    background: #BC4639;
+    color: #FFFFFF;
+}
+
+.Accordion .Title:hover {
+    background: #BC4639;
+    color: #FFFFFF;
+}
+
+.Accordion .Title span {
+    font-size: 2rem;
+    margin-left: 12px;
+}
+
+.Accordion .Panel {
+    background: #FFFFFF;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.Accordion .Panel .PanelContentWrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 8px 12px;
+}
+
+.Accordion .Panel .PanelContentWrapper p {
+    width: 100%;
+    border-bottom: 2px solid #EAE7DC;
+    font-size: 0.8rem;
+    color: #333333;
+    padding: 12px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.Accordion .Panel .PanelContentWrapper textarea {
+    border: 2px solid #EAE7DC;
+    width: 100%;
+    color: #333333;
+    padding: 4px 8px;
+    margin: 4px 0;
+    box-sizing: border-box;
+}
+
+.Accordion .Panel .PanelContentWrapper button {
+    border: none;
+    outline: none;
+    background: #BC4639;
+    font-size: 1rem;
+    color: #EAE7DC;
+    padding: 8px 12px;
+    margin: 4px 0;
+    cursor: pointer;
+}

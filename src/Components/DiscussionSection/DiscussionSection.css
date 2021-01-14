@@ -1,0 +1,15 @@
+.Discussion {
+    padding-top: 7%;
+    box-sizing: border-box;
+}
+
+.Discussion .AccordionWrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}

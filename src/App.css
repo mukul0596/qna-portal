@@ -1,38 +1,66 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  width: 100%;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  overflow: hidden;
 }
 
-.App-link {
-  color: #61dafb;
+.App h1 {
+  position: absolute;
+  top: 0;
+  font-size: 3rem;
+  margin: 0;
+  margin-top: 12px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.App h1:nth-of-type(1) {
+  left: 50%;
+  transform: translate(-100%);
+  color: #EAE7DC;
+}
+
+.App h1:nth-of-type(2) {
+  left: 50%;
+  color: #BC4639;
+}
+
+.App .Section {
+  width: 50%;
+  height: 100%;
+}
+
+.App .Section:nth-of-type(1) {
+  background: #BC4639;
+}
+
+.App .Section:nth-of-type(2) {
+  background: #EAE7DC;
+}
+
+
+@media screen and (max-width: 600px) {
+  .App {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  .App h1 {
+    font-size: 2rem
+  }
+  
+  .App h1:nth-of-type(2) {
+    color: #EAE7DC;
+  }
+  
+  .App .Section {
+    width: 100%;
+  }
+
+  .App .Post {
+    height: 25vh;
+  }
+
+  .App .Discussion {
+    height: 75vh;
   }
 }

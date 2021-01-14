@@ -1,0 +1,75 @@
+.Post {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.Post img {
+    width: 25%;
+    margin-bottom: 80px;
+}
+
+.Post .PostQuesForm {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.Post .PostQuesForm input[type=text] {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid #EAE7DC;
+    color: #EAE7DC;
+    font-size: 1.5rem;
+    padding: 8px 12px;
+    box-sizing: border-box;
+}
+
+.Post .PostQuesForm button {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #EAE7DC;
+    color: #BC4639;
+    font-size: 1.5rem;
+    padding: 8px 0;
+    margin-top: 16px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .Post {
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-top: 32px;
+        box-sizing: border-box;
+    }
+
+    .Post img {
+        width: 12.5%;
+        margin: 0;
+    }
+
+    .Post .PostQuesForm {
+        width: 70%;
+    }
+
+    .Post .PostQuesForm input[type=text] {
+        font-size: 1rem;
+        padding: 4px 8px;
+    }
+
+    .Post .PostQuesForm button {
+        font-size: 1rem;
+        padding: 8px 0;
+        margin-top: 8px;
+    }
+}
